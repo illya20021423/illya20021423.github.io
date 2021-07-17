@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Illya games</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/41/701/png-clipart-logo-graphic-design-graphy-grapher-logo-graphy-angle-text.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>I L L Y A games</span>
+    </div>
+    <div id="about">
+      <a href="#" title="Вступ" onclick="slowScroll('#main')">Начало</a>
+      <a href="#" onclick="slowScroll('#overview')">Игры</a>
+      <a href="#" onclick="slowScroll('#contacts')">Связь</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1><b>Illya</b>games</h1>
+    <h3>Сыграй в наши игры <3</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>             </h2>
+      <span>                     </span>
+    </div>
+    <div class="text">
+      <span>                                                         </span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Список игр:</h2><br>
+
+    <figure class="sign">
+    <p><img src="icon1.png" width="300" height="300"></p>
+    <figcaption><a href="https://play.google.com/store/apps/details?id=com.illyaa.ugadaiiutuberapolitsu">Угадай ютубера</a><br><p><a href="privatepolicy1.html">Политика конфиденциальности</a></p></figcaption>
+    </figure>
+    <figure class="sign">
+    <p><img src="icon2.png" width="300" height="300"></p>
+    <figcaption><a href="https://play.google.com/store/apps/details?id=com.illyaa.ugadaifutbolista">Угадай футболиста</a><br><p><a href="privatepolicy2.html">Политика конфиденциальности</a></p></figcaption>
+    </figure>
+    <figure class="sign">
+    <p><img src="icon3.png" width="300" height="300"></p>
+    <figcaption><a href="https://play.google.com/store/apps/details?id=com.illyaa.naidislova">Слова/кроссворды</a><br><p><a href="privatepolicy3.html">Политика конфиденциальности</a></p></figcaption>
+    </figure>
+  </div>
+
+  <div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+      <label for="outputEmail">Почта: </label><br>
+      <input type="text" name="outputEmail"placeholder="ilya_mun02@mail.ua" disabled="">
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 700);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
