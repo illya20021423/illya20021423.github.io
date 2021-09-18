@@ -265,6 +265,23 @@ h1, h2, h3, h4, h5 {
   border-color: #333;
 }
 
+.sign {
+    float: left; /* Выравнивание по правому краю */
+    border: 3px solid #333; /* Параметры рамки */
+    padding: 7px; /* Поля внутри блока */
+    margin: 15px 0 15px 50px; /* Отступы вокруг */
+    background: #A9A9A9; /* Цвет фона */
+    font-size: 1.3em;
+   }
+
+.sign figcaption {
+    margin: 0 auto 5px; /* Отступы вокруг абзаца */
+   }
+
+p{
+  font-size: 0.75em;
+}
+
 .btn {
   float: left;
   border-radius: 5px;
@@ -281,19 +298,65 @@ h1, h2, h3, h4, h5 {
   background-color: #c15443;
 }
 
-.sign {
-    float: left; /* Выравнивание по правому краю */
-    border: 3px solid #333; /* Параметры рамки */
-    padding: 7px; /* Поля внутри блока */
-    margin: 15px 0 15px 50px; /* Отступы вокруг */
-    background: #A9A9A9; /* Цвет фона */
-    font-size: 1.3em;
-   }
 
-.sign figcaption {
-    margin: 0 auto 5px; /* Отступы вокруг абзаца */
-   }
 
-p{
-  font-size: 0.75em;
+#game body{
+  background-color: #606060;
+  text-align: center;
+}
+
+#game p{
+  font-size: 20px;
+  margin: 7px;
+
+}
+
+
+#game .button {
+  font-family: 'Roboto Slab', serif;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #414141;
+  background-color: #DCDCDC;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 10px;
+}
+
+#game .button:hover {background-color: #808080}
+
+#game .button:active {
+  background-color: #DCDCDC;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+.top_bar{
+     text-align: center;
+     background-color: #FFF;
+     margin: 13px;
+}
+.top_bar input{
+    background-color: #000000;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 34px;
+}
+.top_bar input:hover{
+    background-color: #C55656;
 }
